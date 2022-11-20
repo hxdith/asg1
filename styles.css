@@ -3,7 +3,7 @@
 }
 .navbar li {
     display: inline-block;
-    padding: 24px;
+    padding: 30px;
 }
 
 .navbar li a {
@@ -11,14 +11,6 @@
     font-size: 150%;
 }
 
-.footer {
-    width: 100%;
-    background-color:plum;
-    text-align: center;
-    color: black;
-    position:relative;
-    bottom:0
-}
 
 .footer p{
     font-size: 100%;
@@ -34,11 +26,56 @@ a:visited {
     text-decoration: none;
     color: black;
 }
+.title {
+    text-align: center;
+    font-size: 300%;
+}
+.description {
+    text-align: center;
+    font-size: 150%;
+}
+.content-1 {
+    align-items: center;
+    padding: 20px;
+    outline: auto;
+}
+.box-container {
+    flex-direction: column;
+}
+.box-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+.box-container-description {
+    font-size: 150%;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: grey;
+    height: 200px;
+}
+.footer-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.footer-navbar a,li {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    font-size: 120%;
 
-
-
-
-
-
+}
+.vl {
+    border-left: 1px solid black;
+    height: auto;
+    
+  }
 
 
