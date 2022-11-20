@@ -1,7 +1,4 @@
 # asg1
-Interactive Development I (ID1) Assignment 1
-# asg1
-# Interactive Development I (ID1) Assignment 1
 
 ## What is this wesite for?
 this website is to showcase food for a fictional restaurant called 'Food Delights'
