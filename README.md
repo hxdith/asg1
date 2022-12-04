@@ -2,7 +2,7 @@
 
 ## Food Delights Web Site
 
-This is a web site made to showcase the food made by food delight, a fictional restaurant. The
+This is a web site made to showcase the food made by food delight, a fictional restaurant.
 
 ## What is this wesite for?
 
