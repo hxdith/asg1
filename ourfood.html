@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A restaurant website">
+        <meta name="author" content="Hadith">
+        <meta name="keywords" content="restaurant, food, menu, reservation, contact, about">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Food Delights: Our Food</title>
+        <style></style>
+        <a href="Homepage.html"><img src="media/logo-01.jpg" width="100px" class="logo"></a>
+            
+            <div class="navbar">
+                <center>
+                    <li><a href="homepage.html" target="_self"><b>Home</b></a></li> 
+                    <li><a href="ourfood.html" target="_self"><b>Our food</b></a></li>
+                    <li><a href="about_us.html" target="_self"><b>About us</b></a></li>
+                    <li><a href="Reservation.html" target="_self"><b>Reservation</b></a></li>
+                    <li><a href="contact.html" target="_self"><b>Contact</b></a></li>
+                </center>
+            </div>
+    </head>
+    <body>
+        <h1 class="center" style="padding:10px;">Our Specials!</h1>
+        <hr>
+        <div class="content-special">
+            <div class="food-special-container">
+                <div class="inner-food-container">
+                    <img src="media/special-1.png" alt="food" width="500px" style="max-width:100%;">
+                    <div class = "description">
+                        <p class="heading">Fish and Chips</p>
+                        <p class="">Price: $10.00</p>
+                        <p class="">Our delicious Fish and Chips! Made with the finest cod caught in<br>
+                            the North Sea, and served with a side of chips and tartar sauce.<br>
+                            </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="food-special-container">
+                <div class="inner-food-container">
+                    <img src="media/medium-rare-steak-with-mash-potato-28341569.png" alt="food" width="500px" style="max-width:100%;">
+                    <div class = "description">
+                        <p class="heading">Ribeye Steak</p>
+                        <p class="">Price: $15.00</p>
+                        <p class="">Our finest Ribeye Steak! Made with the top quality beef imported<br>
+                            from Japan, and served with black pepper sauce and mashed<br>potatoes.<br>
+                            </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="food-special-container">
+                <div class="inner-food-container">
+                    <img src="media/big-chicken-cutlet-with-fries-28341569.png" alt="food" width="500px" style="max-width:100%;">
+                    <div class = "description">
+                        <p class="heading">Chicken Cutlet with Fries</p>
+                        <p class="">Price: $9.00</p>
+                        <p class="">Our crispy Chicken Cutlet! Made with the finest chicken found in the wild<br>
+                            stolen from the amazon forest, and served with homemade mayonnaise<br>
+                            and fries.
+                            </p>
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <br><br><br>
+        <hr width="100%">
+        <h1 class="center" style="padding:10px;" id="foodmenulink">Our Menu!</h1>
+        <hr width="100%">
+
+    <img id="food-menu" src="media/food-menu.png" alt="our food menu" width="800" height="auto" style="max-width:100% ;">
+    <p>click the image to enlarge</p>
+    <div id="food-menu-pop" class="food-menu">
+      <img class="food-menu-content" id="food_menu_img">
+    </div>
+               
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="footer-navbar">
+                    <li><a href="homepage.html" target="_self"><b>Home</b></a></li> 
+                    <li><a href="ourfood.html" target="_self"><b>Our food</b></a></li>
+                    <li><a href="about_us.html" target="_self"><b>About us</b></a></li>
+                    <li><a href="Reservation.html" target="_self"><b>Reservation</b></a></li>
+                    <li><a href="contact.html" target="_self"><b>Contact</b></a></li>
+                </div>
+                <div class="footer-form">
+                    <p>Enquire with us!</p>
+                    <form action="mailto:s10221013@gmail.com" method="post">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="text" name="email" placeholder="Email" required>
+                        <textarea type="text" name="message" placeholder="Message" required></textarea>
+                        <input type="submit" value="Submit" id="submit">
+                    </form>
+                </div>
+            </div>
+        </footer>
+    <script>
+        var food_menu = document.getElementById('food-menu-pop');
+         
+
+        var img = document.getElementById('food-menu');
+        var food_menuImg = document.getElementById("food_menu_img");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            food_menu.style.display = "block";
+            food_menuImg.src = this.src;
+            food_menuImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+         
+         
+        food_menu.onclick = function() {{
+               food_menu.style.display = "none";
+               food_menu_img.className = "food-menu-content";
+             }
+            
+         }
+         </script>
+</html>

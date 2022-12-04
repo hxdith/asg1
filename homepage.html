@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!--Done By Hadith-->
+<!DOCTYPE html> <!--Made by Hadith Mukrish S10221013-->
 <html>
     
     <head>
@@ -8,64 +8,160 @@
         <meta name="author" content="Hadith">
         <meta name="keywords" content="restaurant, food, menu, reservation, contact, about">
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Food Delights: Home Page</title>
         <style>
-            h1, p, a, li {
-                color: white;
-            }
+            
         </style>
-            <div class=""><a href="Homepage.html"><img src="logo.jpg"></a></div>
+        <a href="Homepage.html"><img src="media/logo-01.jpg" width="100px" class="logo"></a>
             
             
             <div class="navbar">
                 <center>
-                    <li><a href="" target="_self"><b>Home</b></a></li> 
-                    <li><a href="" target="_self"><b>Our food</b></a></li>
-                    <li><a href="" target="_self"><b>About us</b></a></li>
-                    <li><a href="" target="_self"><b>Reservation</b></a></li>
-                    <li><a href="" target="_self"><b>Contact</b></a></li>
+                    <li><a href="homepage.html" target="_self"><b>Home</b></a></li> 
+                    <li><a href="ourfood.html" target="_self"><b>Our food</b></a></li>
+                    <li><a href="about_us.html" target="_self"><b>About us</b></a></li>
+                    <li><a href="Reservation.html" target="_self"><b>Reservation</b></a></li>
+                    <li><a href="contact.html" target="_self"><b>Contact</b></a></li>
                 </center>
             </div>
     </head>
 
     <body style="background-color:black">
-        <h1 class="title">Food Delights</h1>
-        <hr>
         <div class="content-1">
-            <p class="description">Food delights is a Restaurant focusing on serving quality western food at affordable prices.<br>
-            we have been in service for 20 years and have best won the best food 2012, 2014, 2016, 2018 and 2022 for a fictional restaurant!</p>
-            <center><img src="media/long picture.jpg" alt="Picture of our food" style="max-width:100% ;"></center>
-            
+            <div class ="container-1">
+                <h1 class="title">Food Delights</h1>
+                <p class="description">Food delights is a Restaurant focusing on serving quality western food at affordable prices.<br>
+            we have been in service for 20 years and have won the best food award in 2012 and 2022 for the best fictional restaurant!</p>
+            </div>
         </div>
-        <hr>
-        <p class="description">Check out some of the promotions we are having right now!</p>
-        <div class="box-content">
+        <p class="description">Check out some of the promotions we are having right now!<br>*Terms and conditions apply!</p>
+        <div class="home-content-container">
 
-            <div class="box-container">
-                <img src="media/food1.jpg" width="500px" alt="Picture of our food">
-                <p  class="box-container-description">Buy 1 get 1 free on all our food!</p>
+            <div class="box-content-container">
+                <a href="#popup1">
+                    <div class="box-content" id="promo1">
+                        <div class="box-container">
+                            <img src="media/promotion-03-01.jpg " alt="Picture of our food">
+                        </div>
+                    </div>
+                </a>
+                <a href="#popup2">    
+                    <div class="box-content">
+                        <div class="box-container" id="promo2">
+                            <img src="media/promotion-2-01.jpg"  alt="Picture of our food">
+
+                        </div>
+                    </div>
+                </a>
+                <a href = "#popup3">
+                    <div class="box-content" id="promo3"> 
+                        <div class="box-container">
+                            <img src="media/promotion-1-01.jpg"  alt="Picture of our food" style="max-width:100% ;">
+                        </div>
+                    </div>
+                </a>
+                <a href="#popup4">
+                    <div class="box-content" id="#promo4">
+                        <div class="box-container">
+                            <img src="media/promotion-04-01.jpg" alt="Picture of our food">
+
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="box-container">
-                <img src="media/discount.jpg" width="500px" alt="Picture of our food">
-                <p  class="box-container-description">25% off for students!</p>
+        </div> 
+        <div id="popup1" class="overlay-popup">
+            <div class="popup-promo">
+                <h2>1-for-1 promo</h2>
+                <a class="close-popup" href="#promo1">&times;</a>
+                <div class="content-popup">
+                    <p>Quote <strong>"1FOR1ALLMEALS"</strong> in reservation form or to staff in-person!<br> Valid till <strong>4th December 2022</strong></p>
+                    <p>Terms and Conditions</p>
+                        <ul>
+                            <li>Only valid not in conjunction with any other promotions</li>
+                            <li>Only valid for dine-in</li>
+                            <li>Promotional prices are still subjected to 7% Goods and Services Tax (GST)</li>
+                            
+                        </ul>
+                </div>
             </div>
-            <div class="box-container">
-                <img src="media/discount2.jpg" width="500px" alt="Picture of our food">
-                <p  class="box-container-description">10$ off with minimum spend of $100!</p>
+        </div>
+        <div id="popup2" class="overlay-popup">
+            <div class="popup-promo">
+                <h2>10% off All Menu for Students!</h2>
+                <a class="close-popup" href="#promo2">&times;</a>
+                <div class="content-popup">
+                    <p>Show your concession pass to a staff in-person!<br> Valid till <strong>4th December 2022</strong> and only on weekdays 1pm-5pm.</p>
+                    <p>Terms and Conditions</p>
+                        <ul>
+                            <li>Not valid in conjunction with any other promotions</li>
+                            <li>Only valid for dine-in</li>
+                            <li>Promotional prices are still subjected to 7% Goods and Services Tax (GST)</li>
+                            <li>Student Concession pass is needed to be shown as proof. In the event where the customer did not bring his/her concession card and still
+                                resembles the age of a student, the restaurant reserves the right to deny the concession. Alternatively, a valid student card from the customer's school can be
+                            use as proof.</li>
+                            <li>Only valid for walk-in seating only. Thus, it is not valid for online reservations.</li>
+                            
+                        </ul>
+                </div>
             </div>
-            <div class="box-container">
-                <img src="media/discount3.jpg" width="500px" alt="Picture of our food">
-                <p  class="box-container-description">10% off main course on tuesdays</p>
+        </div>
+        <div id="popup3" class="overlay-popup">
+            <div class="popup-promo">
+                <h2>$10 off min $100</h2>
+                <a class="close-popup" href="#promo3">&times;</a>
+                <div class="content-popup">
+                    <p>Quote <strong>"10OFF100"</strong> in reservation form or to staff in-person!<br> Valid till <strong>4th December 2022</strong></p>
+                    <p>Terms and Conditions</p>
+                        <ul>
+                            <li>Only valid not in conjunction with any other promotions</li>
+                            <li>Only valid for dine-in</li>
+                            <li>Promotional prices are still subjected to 7% Goods and Services Tax (GST)</li>
+                            <li>Promo code used in online reservation forms is only valid when the minimum spent hits the stipulated amount, 
+                            please do check our prices in our menu <a href="ourfood.html#foodmenulink"><strong><i>here</i></strong></a> and check that
+                            your total order hits the stipulated amount. Do note that Goods and Service Tax(GST) will only be included
+                            in the nett total</li>
+                            
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div id="popup4" class="overlay-popup">
+            <div class="popup-promo">
+                <h2>$10 off min $100</h2>
+                <a class="close-popup" href="#promo4">&times;</a>
+                <div class="content-popup">
+                    <p>Quote <strong>"TWOSDAY"</strong> in reservation form or to staff in-person!<br> Valid till <strong>4th December 2022</strong></p>
+                    <p>Terms and Conditions</p>
+                        <ul>
+                            <li>Only valid not in conjunction with any other promotions</li>
+                            <li>Only valid for dine-in</li>
+                            <li>Promotional prices are still subjected to 7% Goods and Services Tax (GST)</li>
+                            <li>Only valid for 2 pax</li>
+                            
+                        </ul>
+                </div>
             </div>
         </div>
         <footer>
             <div class="footer">
                 <div class="footer-navbar">
-                    <li><a href="" target="_self"><b>Home</b></a></li> 
-                    <li><a href="" target="_self"><b>Our food</b></a></li>
-                    <li><a href="" target="_self"><b>About us</b></a></li>
-                    <li><a href="" target="_self"><b>Reservation</b></a></li>
-                    <li><a href="" target="_self"><b>Contact</b></a></li>
+                    <li><a href="homepage.html" target="_self"><b>Home</b></a></li> 
+                    <li><a href="ourfood.html" target="_self"><b>Our food</b></a></li>
+                    <li><a href="about_us.html" target="_self"><b>About us</b></a></li>
+                    <li><a href="Reservation.html" target="_self"><b>Reservation</b></a></li>
+                    <li><a href="contact.html" target="_self"><b>Contact</b></a></li>
                 </div>
-                <div class="vl"></div>
+                <div class="footer-form">
+                    <p>Enquire with us!</p>
+                    <form action="mailto:s10221013@gmail.com" method="post">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="text" name="email" placeholder="Email" required>
+                            <textarea type="text" name="message" placeholder="Message" required></textarea>
+                            <input type="submit" value="Submit" id="submit">
+                        </div>
+                    </form>
+                </div>
             </div>
         </footer>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A restaurant website">
+        <meta name="author" content="Hadith">
+        <meta name="keywords" content="restaurant, food, menu, reservation, contact, about">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Food Delights: Our Food</title>
+        <style>
+            form {
+                display: block;
+                padding: 30px;
+                margin: 30px;
+                width: 800px;
+                background-color: rgba(63, 63, 63, 0.336);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .form {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                max-width: 100%;
+            }
+            .form-ele {
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .label {
+                font-size: 20px;
+            }
+            .row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .request {
+                width: 450px; height: 100px; resize: none;
+            }
+            @media screen and (min-width: 800px) {
+
+                .request {
+                    width: 700px; height: 100px; resize: none;
+                }
+            }
+                
+            
+            @media screen and (max-width: 600px) {
+                .form {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    max-width: 100%;
+                }
+                .form-ele {
+                    display:flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+                .label {
+                    font-size: 20px;
+                }
+                .row {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                }
+                .request {
+                    width: 450px; height: 100px; resize: none;
+                }
+            }
+                
+        </style>
+        <a href="Homepage.html"><img src="media/logo-01.jpg" width="100px" class="logo"></a>
+            
+            
+            <div class="navbar">
+                <center>
+                    <li><a href="homepage.html" target="_self"><b>Home</b></a></li> 
+                    <li><a href="ourfood.html" target="_self"><b>Our food</b></a></li>
+                    <li><a href="about_us.html" target="_self"><b>About us</b></a></li>
+                    <li><a href="Reservation.html" target="_self"><b>Reservation</b></a></li>
+                    <li><a href="contact.html" target="_self"><b>Contact</b></a></li>
+                </center>
+            </div>
+    </head>
+    <body>
+        <h1 class="center">Reserve With Us!</h1>
+        <hr>
+        <div class="form">
+            <form method="post" action="mailto:fooddelightnotrealpleasedontemaillol@fooddelight.com">
+                <h1 class="center">Table Reservation</h1>
+                <hr>
+                <div class="row">
+
+                    <div class=".form-ele">
+                        <div class="label">Date:</div>
+                        <div><input type="date" name="date" required style="width: 200px; height:30px ;"></div>
+                    </div>
+                    <div class=".form-ele">
+                        <div class="label">Time:</div>
+                        <div><input type="time" name="time" required style="width: 200px; height:30px ;"></div>
+                    </div>
+                    <div class=".form-ele">
+                        <div class="label">Number of people:</div>
+                        <div><input type="number" name="people" required style="width: 200px; height:30px ;"></div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class=".form-ele">
+                        <div class="label">Name:</div>
+                        <div><input type="text" name="name" required style="width: 450px; height:30px ;"></div>
+                    </div>
+                    <div class=".form-ele">
+                        <div class="label">Phone:</div>
+                        <div><input type="tel" name="phone" required style="width: 200px; height:30px ;"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=".form-ele">
+                        <div class="label">Email:</div>
+                        <div><input type="email" name="email" required style="width: 450px; height:30px ;"></div>
+                    </div>
+                    <div class=".form-ele">
+                        <div class="label">Promo code</div>
+                        <div style="position: relative;"><input type="text" name="Promocode" placeholder="If none, leave empty" style="width: 200px; height:30px ;" id="promocodetext"><button type="button" style="position:absolute ;right:0;width: 70px; height: 30px;" id="promocode" onclick="checkcode()">check</button><div class="error" id="codeerror"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=".form-ele">
+                        <div class="label">Special requests:</div>
+                        <div><textarea name="requests" class="request" placeholder="Need booster seat, it's someone's birthday etc....."></textarea></div>
+                    </div>
+                </div>
+                <input type="submit" value="Submit" style="width: 100px; height: 30px; float: right;">
+            </form>
+        </div>
+    </body>
+    <script>
+        function checkcode() {
+            console.log("checking code");
+            errorMsg = "";
+            let code = document.getElementById("promocodetext").value;
+            let promocodes = ["1FOR1ALLMEALS", "10OFF100", "TWOSDAY"];
+            if(code == "") {
+                errorMsg = "No code entered";
+            } else if (promocodes.includes(code)) {
+                let codeApplied = code
+                errorMsg = codeApplied + " applied";
+            } else {
+                errorMsg = "Invalid code";
+            }
+            document.getElementById("codeerror").innerHTML = errorMsg;
+        
+        }
+        
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</html>

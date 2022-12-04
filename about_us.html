@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A restaurant website">
+        <meta name="author" content="Hadith">
+        <meta name="keywords" content="restaurant, food, menu, reservation, contact, about">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Food Delights: Home Page</title>
+        <a href="Homepage.html"><img src="media/logo-01.jpg" width="100px" class="logo"></a>
+            
+            
+            <div class="navbar">
+                <center>
+                    <li><a href="homepage.html" target="_self"><b>Home</b></a></li> 
+                    <li><a href="ourfood.html" target="_self"><b>Our food</b></a></li>
+                    <li><a href="about_us.html" target="_self"><b>About us</b></a></li>
+                    <li><a href="Reservation.html" target="_self"><b>Reservation</b></a></li>
+                    <li><a href="contact.html" target="_self"><b>Contact</b></a></li>
+                </center>
+            </div>
+    </head>
+    <body>
+        <br>
+        <h1 class="center" style="padding:10px;">Our Story!</h1>
+        <hr>
+        <div class="dropdown">
+            <button type="button" class="dropdown-btn">Who are we?</button>
+            <div class="dropdown-container">
+                <p>Food delights is a Restaurant focusing on serving quality western food. We have been in service for 20 years and over.<br>
+                    We have won several awards including the best food award in 2012 and 2022 for the best fictional restaurant.</p>
+                    <br></p>
+                <div class="center">
+                    <img src="media/Company-image-01.jpg" alt="Company image" style="max-width:100% ;" width="700px" height="auto">
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button type="button" class="dropdown-btn">Our Mission</button>
+            <div class="dropdown-container">
+                <p>
+                    We aim to serve many food at a reasonable and competitive price, even after the godforsaken inflation. We also aim to provide the best service to our customers.  <br>
+                </p>
+                <div class="center">
+                    <img src="media/collage-of-western-food-28341569.png" alt="Company image" style="max-width:100% ;" width="700px" height="auto">
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button type="button" class="dropdown-btn">Our Achievements</button>
+            <div class="dropdown-container">
+
+                <div class="center" style="padding: 30px; ;">
+                    <img src="media/award-1-01.jpg" alt="Company image" style="max-width:100% ;" width="700px" height="auto">
+                </div>
+                <div class="center" style="padding: 30px; ;">
+                    <img src="media/award-2-01.jpg" alt="Company image" style="max-width:100% ;" width="700px" height="auto">
+                </div>
+        </div>
+        
+
+    </body>
+    <script>
+
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+
+        for( var i=0; i<dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function(){
+                this.classList.toggle("toggle");
+                var dropdownContent = this.nextElementSibling;
+                if(dropdownContent.style.maxHeight){
+                    dropdownContent.style.maxHeight = null;
+
+                }else{
+                    dropdownContent.style.maxHeight = dropdownContent.scrollHeight + "px";
+
+                }
+            });
+        }
+    </script>
+</html>
